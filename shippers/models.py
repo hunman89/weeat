@@ -3,5 +3,8 @@ from core import models as core_models
 
 
 class Shipper(core_models.TimeStampedModel):
-    name = models.CharField()
+
+    """ Account model definition"""
+
+    name = models.CharField(max_length=80)
     location = models.IntegerField()

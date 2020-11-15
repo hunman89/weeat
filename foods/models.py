@@ -1,3 +1,9 @@
 from django.db import models
+from core import models as core_models
 
-# Create your models here.
+
+class Food(core_models.TimeStampedModel):
+
+    """ Food model definition"""
+
+    name = models.CharField(max_length=80)
